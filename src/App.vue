@@ -1,24 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>BubbleChart Retrieved from Firebase</h1>
+    <BubbleChart></BubbleChart>
+    <bar-chart></bar-chart>
+    <HorizontalBarChart></HorizontalBarChart>
+    <BarChartGrouped></BarChartGrouped>
+    <LineChart></LineChart>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BarChart from './components/BarChart.vue'
+import HorizontalBarChart from './components/HorizontalBarChart.vue'
+import BarChartGrouped from './components/BarChartGrouped.vue'
+import LineChart from './components/LineChart.vue'
+import BubbleChart from './components/BubbleChart.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    HelloWorld
+    BarChart,
+    HorizontalBarChart,
+    BarChartGrouped,
+    LineChart,
+    BubbleChart
+
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
